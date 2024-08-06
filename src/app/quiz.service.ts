@@ -107,5 +107,68 @@ export class QuizService {
       ],
     },
   ];
+  answers = [
+    {
+      id: '1',
+      ans: 'Paris',
+    },
+    {
+      id: '2',
+      ans: 'Jupiter',
+    },
+    {
+      id: '3',
+      ans: 'Au',
+    },
+    {
+      id: '4',
+      ans: 'Harper Lee',
+    },
+    {
+      id: '5',
+      ans: 'Cell',
+    },
+    {
+      id: '6',
+      ans: 'Hydrogen',
+    },
+    {
+      id: '7',
+      ans: 'Diamond',
+    },
+    {
+      id: '8',
+      ans: 'Avocado',
+    },
+    {
+      id: '9',
+      ans: 'Leonardo da Vinci',
+    },
+    {
+      id: '10',
+      ans: 'Nile',
+    },
+    {
+      id: '11',
+      ans: ['Python', 'Java', 'C++'],
+    },
+    {
+      id: '12',
+      ans: ['1NF', '2NF', '3NF', '4NF', '5NF'],
+    },
+    {
+      id: '13',
+      ans: ['Windows', 'Android', 'Linux'],
+    },
+    {
+      id: '14',
+      ans: ['Array', 'Queue', 'Binary Tree'],
+    },
+    {
+      id: '15',
+      ans: ['Unit Testing', 'Integration Testing', 'System Testing'],
+    },
+  ];
+
   constructor() {}
 }
