@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
-  providedIn: 'root',
 })
 export class QuizService {
   questions = [
@@ -70,6 +69,42 @@ export class QuizService {
       question: 'What is the longest river in the world?',
       type: 'mcq',
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
+    },
+    {
+      id: '11',
+      question: 'Which of the following are programming languages?',
+      type: 'mcq',
+      choices: ['Python', 'Java', 'HTML', 'C++'],
+    },
+    {
+      id: '12',
+      question:
+        'Which of the following are types of database normalization forms?',
+      type: 'mcq',
+      choices: ['1NF', '2NF', '3NF', '4NF', '5NF'],
+    },
+    {
+      id: '13',
+      question: 'Which of the following are common operating systems?',
+      type: 'mcq',
+      choices: ['Windows', 'Android', 'Linux', 'HTML'],
+    },
+    {
+      id: '14',
+      question: 'Which of these are common data structures?',
+      type: 'mcq',
+      choices: ['Array', 'Queue', 'Binary Tree', 'HTML'],
+    },
+    {
+      id: '15',
+      question: 'Which of the following are types of software testing?',
+      type: 'mcq',
+      choices: [
+        'Unit Testing',
+        'Integration Testing',
+        'System Testing',
+        'SEO Testing',
+      ],
     },
   ];
   constructor() {}
