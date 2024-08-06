@@ -70,6 +70,105 @@ export class QuizService {
       type: 'mcq',
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
     },
+    {
+      id: '11',
+      question: 'Which of the following are programming languages?',
+      type: 'mca',
+      choices: ['Python', 'Java', 'HTML', 'C++'],
+    },
+    {
+      id: '12',
+      question:
+        'Which of the following are types of database normalization forms?',
+      type: 'mca',
+      choices: ['1NF', '2NF', '3NF', '4NF', '5NF'],
+    },
+    {
+      id: '13',
+      question: 'Which of the following are common operating systems?',
+      type: 'mca',
+      choices: ['Windows', 'Android', 'Linux', 'HTML'],
+    },
+    {
+      id: '14',
+      question: 'Which of these are common data structures?',
+      type: 'mca',
+      choices: ['Array', 'Queue', 'Binary Tree', 'HTML'],
+    },
+    {
+      id: '15',
+      question: 'Which of the following are types of software testing?',
+      type: 'mca',
+      choices: [
+        'Unit Testing',
+        'Integration Testing',
+        'System Testing',
+        'SEO Testing',
+      ],
+    },
   ];
+  answers = [
+    {
+      id: '1',
+      ans: 'Paris',
+    },
+    {
+      id: '2',
+      ans: 'Jupiter',
+    },
+    {
+      id: '3',
+      ans: 'Au',
+    },
+    {
+      id: '4',
+      ans: 'Harper Lee',
+    },
+    {
+      id: '5',
+      ans: 'Cell',
+    },
+    {
+      id: '6',
+      ans: 'Hydrogen',
+    },
+    {
+      id: '7',
+      ans: 'Diamond',
+    },
+    {
+      id: '8',
+      ans: 'Avocado',
+    },
+    {
+      id: '9',
+      ans: 'Leonardo da Vinci',
+    },
+    {
+      id: '10',
+      ans: 'Nile',
+    },
+    {
+      id: '11',
+      ans: ['Python', 'Java', 'C++'],
+    },
+    {
+      id: '12',
+      ans: ['1NF', '2NF', '3NF', '4NF', '5NF'],
+    },
+    {
+      id: '13',
+      ans: ['Windows', 'Android', 'Linux'],
+    },
+    {
+      id: '14',
+      ans: ['Array', 'Queue', 'Binary Tree'],
+    },
+    {
+      id: '15',
+      ans: ['Unit Testing', 'Integration Testing', 'System Testing'],
+    },
+  ];
+
   constructor() {}
 }
