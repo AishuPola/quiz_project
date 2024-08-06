@@ -73,32 +73,32 @@ export class QuizService {
     {
       id: '11',
       question: 'Which of the following are programming languages?',
-      type: 'mcq',
+      type: 'mca',
       choices: ['Python', 'Java', 'HTML', 'C++'],
     },
     {
       id: '12',
       question:
         'Which of the following are types of database normalization forms?',
-      type: 'mcq',
+      type: 'mca',
       choices: ['1NF', '2NF', '3NF', '4NF', '5NF'],
     },
     {
       id: '13',
       question: 'Which of the following are common operating systems?',
-      type: 'mcq',
+      type: 'mca',
       choices: ['Windows', 'Android', 'Linux', 'HTML'],
     },
     {
       id: '14',
       question: 'Which of these are common data structures?',
-      type: 'mcq',
+      type: 'mca',
       choices: ['Array', 'Queue', 'Binary Tree', 'HTML'],
     },
     {
       id: '15',
       question: 'Which of the following are types of software testing?',
-      type: 'mcq',
+      type: 'mca',
       choices: [
         'Unit Testing',
         'Integration Testing',
