@@ -19,7 +19,7 @@ export class QuestionsComponent {
     type: 'mcq',
     choices: ['Berlin', 'Madrid', 'Paris', 'Rome'],
   };
-  id: number;
+  id: any;
   constructor(
     public quizService: QuizService,
     public router: Router,
@@ -29,31 +29,6 @@ export class QuestionsComponent {
     this.quizForm = this.fb.group({
       choices: [''],
     });
-    // let currentQuestionIndex: any = this.route.snapshot.paramMap.get(
-    //   'id'
-    // ) as string; // From URL
-    // this.id = currentQuestionIndex;
-    this.id = parseInt(this.route.snapshot.paramMap.get('id') || '0', 10);
-  }
-  nextQuestion() {
-    if (this.id < this.quizService.questions.length - 1) {
-      this.id++;
-      this.question = this.quizService.questions[this.id];
-
-      this.router.navigate([`question/${this.id}`]).then(() => {
-        this.loadQuestion();
-        this.loadSavedAnswer();
-      });
-    } else {
-      this.onSubmit();
-    }
-  }
-  loadQuestion() {
-    this.question = this.quizService.questions[this.id];
-  }
-
-  onSubmit() {
-    this.router.navigate(['/score']);
   }
 
   ngOnInit(): void {
