@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
 @Component({
   selector: 'app-checkbox',
   standalone: true,
-  imports: [MatCheckboxModule, MatCheckboxModule],
+  imports: [MatCheckboxModule, MatCheckboxModule,MatCheckbox],
   templateUrl: './checkbox.component.html',
   styleUrl: './checkbox.component.scss',
 })

@@ -1,3 +1,44 @@
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+//  .checkbox-group{
+//   display: flex;
+//   flex-direction: column;
+//   gap: 8px;
+// }
+mat-checkbox {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-width:400px;
+}
+
+mat-checkbox:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+mat-checkbox.mat-checkbox.mat-accent {
+  color: #007bff;
+}
+
+mat-checkbox.mat-checkbox.mat-accent .mat-radio-outer-circle {
+  border-color: #007bff;
+}
+
+mat-checkbox.mat-checkbox.mat-accent .mat-radio-inner-circle {
+  background-color: #007bff;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
@@ -27,88 +68,88 @@ body {
 }
 
 
-  .options {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+//   .options {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 12px;
+//     padding: 20px;
+//     border-radius: 12px;
+//     background-color: #ffffff;
+//     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// }
 
 
-mat-radio-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+// mat-radio-group {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 12px;
+// }
 
-mat-radio-button {
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  padding: 12px 16px;
-  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  border: 1px solid #ddd;
-}
+// mat-radio-button {
+//   background-color: #f5f5f5;
+//   border-radius: 4px;
+//   padding: 12px 16px;
+//   transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+//   display: flex;
+//   align-items: center;
+//   cursor: pointer;
+//   border: 1px solid #ddd;
+// }
 
-mat-radio-button:hover {
-  background-color: #e0e0e0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transform: scale(1.02);
-}
+// mat-checkbox:hover {
+//   background-color: #e0e0e0;
+//   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+//   transform: scale(1.02);
+// }
 
-mat-radio-button.mat-radio-button.mat-accent {
-  color: #007bff;
-}
+// mat-checkbox.mat-checkbox.mat-accent {
+//   color: #007bff;
+// }
 
-mat-radio-button.mat-radio-button.mat-accent .mat-radio-outer-circle {
-  border-color: #007bff;
-}
+// mat-checkbox.mat-checkbox.mat-accent .mat-radio-outer-circle {
+//   border-color: #007bff;
+// }
 
-mat-radio-button.mat-radio-button.mat-accent .mat-radio-inner-circle {
-  background-color: #007bff;
-}
+// mat-checkbox.mat-checkbox.mat-accent .mat-radio-inner-circle {
+//   background-color: #007bff;
+// }
 
-.button-group {
-  display: flex;
-  justify-content: space-between;
-}
+// .button-group {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s, transform 0.2s;
-  flex: 1;
-  margin: 0 5px;
-}
+// .button {
+//   background-color: #007bff;
+//   color: white;
+//   border: none;
+//   border-radius: 4px;
+//   padding: 10px 20px;
+//   cursor: pointer;
+//   font-size: 16px;
+//   transition: background-color 0.3s, transform 0.2s;
+//   flex: 1;
+//   margin: 0 5px;
+// }
 
-.button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
+// .button:hover {
+//   background-color: #0056b3;
+//   transform: scale(1.05);
+// }
 
-.button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-}
+// .button:focus {
+//   outline: none;
+//   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+// }
 
-.back-button {
-  background-color: #6c757d;
-}
+// .back-button {
+//   background-color: #6c757d;
+// }
 
-.skip-button {
-  background-color: #ffc107;
-}
+// .skip-button {
+//   background-color: #ffc107;
+// }
 
-.next-button {
-  background-color: #28a745;
-}
+// .next-button {
+//   background-color: #28a745;
+// }
