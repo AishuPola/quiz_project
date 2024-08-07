@@ -71,5 +71,48 @@ export class QuizService {
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
     },
   ];
+  answers = [
+    {
+      id: '1',
+      answer: 'Paris',
+    },
+    {
+      id: '2',
+      answer: 'Jupiter',
+    },
+    {
+      id: '3',
+      answer: 'Au',
+    },
+    {
+      id: '4',
+      answer: 'Harper Lee',
+    },
+    {
+      id: '5',
+      answer: 'Cell',
+    },
+    {
+      id: '6',
+      answer: 'Hydrogen',
+    },
+    {
+      id: '7',
+      answer: 'Diamond',
+    },
+    {
+      id: '8',
+      answer: 'Avocado',
+    },
+    {
+      id: '9',
+      answer: 'Leonardo da Vinci',
+    },
+    {
+      id: '10',
+      answer: 'Nile',
+    },
+  ];
+
   constructor() {}
 }
