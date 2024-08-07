@@ -1,107 +1,80 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .header, .intro, .funny-lines, .call-to-action {
-    margin: 20px;
+
+.container {
     padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 90%; /* Add this to prevent content from stretching too wide */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    max-width: 800px;
+    margin: 0 auto;
   }
   
-  h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #2c3e50;
+  header {
     text-align: center;
-  }
-  
-  h2 {
-    font-size: 2em;
-    margin: 0;
-    color: #2980b9;
-    text-align: center;
-  }
-  
-  p {
-    line-height: 1.6;
-    margin: 10px 0;
-    text-align: center; /* Center paragraph text */
-  }
-  
-  .header p {
-    font-size: 1.2em;
-    color: #7f8c8d;
+    margin-bottom: 20px;
   }
   
   .funny-lines {
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .funny-line {
     font-style: italic;
-    color: #e74c3c;
-    margin: 20px 0;
-    font-size: 1em; /* Reduced font size */
-    max-width: 500px;
+    font-size: 1.2em;
   }
   
-  .funny-lines img {
-    max-width: 50%;
+  img {
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
   }
   
   .call-to-action {
     text-align: center;
   }
   
-  .call-to-action button {
-    background-color: #2980b9;
-    color: #fff;
+  button {
+    font-size: 1em;
+    padding: 10px 20px;
+    color: #fff; 
+    background-color: #007bff;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
-  .call-to-action button:hover {
-    background-color: #3498db;
+  button:hover {
+    background-color: #0056b3; 
+  }
+
+  @media (max-width: 768px) {
+    .funny-line {
+      font-size: 1em;
+    }
+  
+    button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
   }
   
-  @media (max-width: 768px) {
-    .header, .intro, .funny-lines, .call-to-action {
-      margin: 10px;
-      padding: 15px;
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
     }
   
-    h1 {
-      font-size: 2em;
+    header h1 {
+      font-size: 1.5em; 
     }
   
-    h2 {
-      font-size: 1.5em;
-    }
-  
-    .call-to-action button {
+    header p {
       font-size: 1em;
-      padding: 10px 20px;
     }
+  
+    .funny-line {
+      font-size: 0.9em;
+    }
+  
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+      }
   }
   
