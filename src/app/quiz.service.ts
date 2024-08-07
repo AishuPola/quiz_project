@@ -70,47 +70,105 @@ export class QuizService {
       type: 'mcq',
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
     },
+    {
+      id: '11',
+      question: 'Which of the following are prime numbers?',
+      type: 'mca',
+      choices: ['2', '4', '6', '7', '9'],
+    },
+
+    {
+      id: '12',
+      question: 'Which of these countries are located in Europe?',
+      type: 'mca',
+      choices: ['France', 'Brazil', 'Italy', 'Canada', 'Germany'],
+    },
+
+    {
+      id: '13',
+      question: 'Which elements are noble gases?',
+      type: 'mca',
+      choices: ['Helium', 'Oxygen', 'Neon', 'Hydrogen', 'Argon'],
+    },
+
+    {
+      id: '14',
+      question: 'Which of these animals are mammals?',
+      type: 'mca',
+      choices: ['Elephant', 'Shark', 'Crocodile', 'Dolphin', 'Penguin'],
+    },
+
+    {
+      id: '15',
+      question: 'Which of the following are programming languages?',
+      type: 'mca',
+      choices: ['Python', 'Java', 'HTML', 'CSS', 'Ruby'],
+    },
   ];
   answers = [
     {
       id: '1',
-      answer: 'Paris',
+      answer: ['Paris'],
     },
     {
       id: '2',
-      answer: 'Jupiter',
+      answer: ['Jupiter'],
     },
     {
       id: '3',
-      answer: 'Au',
+      answer: ['Au'],
     },
     {
       id: '4',
-      answer: 'Harper Lee',
+      answer: ['Harper Lee'],
     },
     {
       id: '5',
-      answer: 'Cell',
+      answer: ['Cell'],
     },
     {
       id: '6',
-      answer: 'Hydrogen',
+      answer: ['Hydrogen'],
     },
     {
       id: '7',
-      answer: 'Diamond',
+      answer: ['Diamond'],
     },
     {
       id: '8',
-      answer: 'Avocado',
+      answer: ['Avocado'],
     },
     {
       id: '9',
-      answer: 'Leonardo da Vinci',
+      answer: ['Leonardo da Vinci'],
     },
     {
       id: '10',
-      answer: 'Nile',
+      answer: ['Nile'],
+    },
+    {
+      id: '11',
+      answer: ['2', '7'],
+    },
+
+    {
+      id: '12',
+      answer: ['France', 'Italy', 'Germany'],
+    },
+
+    {
+      id: '13',
+      answer: ['Helium', 'Neon', 'Argon'],
+    },
+
+    {
+      id: '14',
+      answer: ['Elephant', 'Dolphin'],
+    },
+
+    {
+      id: '15',
+      answer: ['Python', 'Java', 'Ruby'],
     },
   ];
 

@@ -28,6 +28,8 @@ export class QuestionsComponent {
   }
 
   ngOnInit(): void {
+    // this.id = parseInt(this.route.snapshot.paramMap.get('id') || '0', 10);
+    // this.loadQuestion();
     this.loadSavedAnswer();
     this.quizForm.get('choices')?.valueChanges.subscribe((value) => {
       this.saveAnswer(value);
