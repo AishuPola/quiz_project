@@ -1,34 +1,40 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { QuestionsComponent } from '../questions/questions.component';
 import { QuizService } from '../quiz.service';
-import { ActivatedRoute } from '@angular/router';
 import { ScoreComponent } from '../score/score.component';
-import { Router } from '@angular/router';
+import { MatRadioModule } from '@angular/material/radio';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [QuestionsComponent, ScoreComponent],
+  imports: [QuestionsComponent, MatRadioModule, ScoreComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
   question: any;
-  id = 0;
+  id: any;
   constructor(
     public quizService: QuizService,
     private route: ActivatedRoute,
     private router: Router
   ) {
-    let id: any = this.route.snapshot.paramMap.get('id') as string; // From URL
+    this.id = this.route.snapshot.paramMap.get('id'); // From URL
+    this.id = +this.id;
+    this.question = this.quizService.questions[this.idx];
 
-    this.question = this.quizService.questions[id - 1];
     console.log(this.question);
   }
+
+  get idx() {
+    return this.id - 1;
+  }
+
   prevQuestion() {
     if (this.id > 1) {
       this.id--;
-      this.question = this.quizService.questions[this.id];
+      this.question = this.quizService.questions[this.idx];
 
       this.router.navigate([`question/${this.id}`]);
     }
@@ -36,8 +42,8 @@ export class HomeComponent {
   nextQuestion() {
     if (this.id <= this.quizService.questions.length - 1) {
       this.id++;
-      this.question = this.quizService.questions[this.id];
-
+      this.question = this.quizService.questions[this.idx];
+      console.log(this.id, this.question);
       this.router.navigate([`question/${this.id}`]);
     } else {
       this.onSubmit();
