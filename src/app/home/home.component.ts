@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { QuestionsComponent } from '../questions/questions.component';
 import { QuizService } from '../quiz.service';
 import { ActivatedRoute } from '@angular/router';
+import { ScoreComponent } from '../score/score.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [QuestionsComponent],
+  imports: [QuestionsComponent, ScoreComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
