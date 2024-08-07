@@ -17,10 +17,10 @@ body {
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 90%; /* Add this to prevent content from stretching too wide */
+    max-width: 100%; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center; 
   }
   
   h1 {
@@ -40,7 +40,7 @@ body {
   p {
     line-height: 1.6;
     margin: 10px 0;
-    text-align: center; /* Center paragraph text */
+    text-align: center; 
   }
   
   .header p {
@@ -56,7 +56,7 @@ body {
     font-style: italic;
     color: #e74c3c;
     margin: 20px 0;
-    font-size: 1em; /* Reduced font size */
+    font-size: 1em; 
     max-width: 500px;
   }
   
