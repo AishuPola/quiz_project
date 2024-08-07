@@ -3,11 +3,12 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatRadioModule } from '@angular/material/radio';
 import { QuizService } from '../quiz.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { RadioComponent } from '../radio/radio.component';
 
 @Component({
   selector: 'app-questions',
   standalone: true,
-  imports: [MatRadioModule, ReactiveFormsModule],
+  imports: [MatRadioModule, ReactiveFormsModule,RadioComponent],
   templateUrl: './questions.component.html',
   styleUrl: './questions.component.scss',
 })

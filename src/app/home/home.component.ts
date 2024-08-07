@@ -4,11 +4,12 @@ import { QuestionsComponent } from '../questions/questions.component';
 import { QuizService } from '../quiz.service';
 import { ScoreComponent } from '../score/score.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { RadioComponent } from '../radio/radio.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [QuestionsComponent, MatRadioModule, ScoreComponent],
+  imports: [QuestionsComponent, MatRadioModule, ScoreComponent,RadioComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
