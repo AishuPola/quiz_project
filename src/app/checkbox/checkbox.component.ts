@@ -3,7 +3,7 @@ import { MatCheckbox, MatCheckboxModule } from '@angular/material/checkbox';
 @Component({
   selector: 'app-checkbox',
   standalone: true,
-  imports: [MatCheckboxModule, MatCheckboxModule,MatCheckbox],
+  imports: [MatCheckboxModule, MatCheckboxModule],
   templateUrl: './checkbox.component.html',
   styleUrl: './checkbox.component.scss',
 })
