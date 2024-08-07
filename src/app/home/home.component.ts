@@ -54,4 +54,12 @@ export class HomeComponent {
   onSubmit() {
     this.router.navigate(['/score']);
   }
+  skipQuestion() {
+    if (this.id <= this.quizService.questions.length - 1) {
+      this.id++;
+      this.question = this.quizService.questions[this.idx];
+      console.log(this.id, this.question);
+      this.router.navigate([`question/${this.id}`]);
+    }
+  }
 }
