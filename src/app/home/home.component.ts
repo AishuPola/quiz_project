@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { QuestionsComponent } from '../questions/questions.component';
 import { QuizService } from '../quiz.service';
 import { ScoreComponent } from '../score/score.component';
 import { MatRadioModule } from '@angular/material/radio';
@@ -10,13 +9,7 @@ import { CheckboxComponent } from '../checkbox/checkbox.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    QuestionsComponent,
-    MatRadioModule,
-    ScoreComponent,
-    RadioComponent,
-    CheckboxComponent,
-  ],
+  imports: [MatRadioModule, ScoreComponent, RadioComponent, CheckboxComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
