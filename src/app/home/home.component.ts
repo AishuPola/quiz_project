@@ -5,11 +5,18 @@ import { QuizService } from '../quiz.service';
 import { ScoreComponent } from '../score/score.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { RadioComponent } from '../radio/radio.component';
+import { CheckboxComponent } from '../checkbox/checkbox.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [QuestionsComponent, MatRadioModule, ScoreComponent,RadioComponent],
+  imports: [
+    QuestionsComponent,
+    MatRadioModule,
+    ScoreComponent,
+    RadioComponent,
+    CheckboxComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
