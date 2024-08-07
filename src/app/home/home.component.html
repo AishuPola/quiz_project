@@ -1,13 +1,13 @@
 <div class="whole-container">
-  <app-questions [question]="question" />
-  <div class="options">
+  <app-questions [question]="question" [id]="id" />
+  <!-- <div class="options">
     <mat-radio-group aria-label="Select an option">
       <mat-radio-button value="1">{{ question.choices[0] }}</mat-radio-button>
       <mat-radio-button value="2">{{ question.choices[1] }}</mat-radio-button>
       <mat-radio-button value="3">{{ question.choices[2] }}</mat-radio-button>
       <mat-radio-button value="4">{{ question.choices[3] }}</mat-radio-button>
     </mat-radio-group>
-  </div>
+  </div> -->
 
   <div class="button-group">
     <button class="button back-button" (click)="prevQuestion()">BACK</button>

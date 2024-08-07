@@ -19,13 +19,8 @@ export class QuestionsComponent {
     type: 'mcq',
     choices: ['Berlin', 'Madrid', 'Paris', 'Rome'],
   };
-  id: any;
-  constructor(
-    public quizService: QuizService,
-    public router: Router,
-    public fb: FormBuilder,
-    private route: ActivatedRoute
-  ) {
+  @Input() id: any;
+  constructor(public fb: FormBuilder, private route: ActivatedRoute) {
     this.quizForm = this.fb.group({
       choices: [''],
     });
