@@ -9,7 +9,7 @@ import { RadioComponent } from '../radio/radio.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [QuestionsComponent, MatRadioModule, ScoreComponent,RadioComponent],
+  imports: [QuestionsComponent, MatRadioModule, ScoreComponent, RadioComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -53,5 +53,13 @@ export class HomeComponent {
 
   onSubmit() {
     this.router.navigate(['/score']);
+  }
+  skipQuestion() {
+    if (this.id <= this.quizService.questions.length - 1) {
+      this.id++;
+      this.question = this.quizService.questions[this.idx];
+      console.log(this.id, this.question);
+      this.router.navigate([`question/${this.id}`]);
+    }
   }
 }
