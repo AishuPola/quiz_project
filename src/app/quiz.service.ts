@@ -71,37 +71,5 @@ export class QuizService {
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
     },
   ];
-
-  // private correctAnswers = {
-  //   question1: 'A',
-  //   question2: 'B',
-  //   question3: 'C',
-  //   question4: 'D'
-  // };
-
-  // private userAnswers = {};
-
-  // constructor() { }
-
-  // setUserAnswer(question: string, answer: string) {
-  //   this.userAnswers[question] = answer;
-  // }
-
-  // getUserAnswers() {
-  //   return this.userAnswers;
-  // }
-
-  // getCorrectAnswers() {
-  //   return this.correctAnswers;
-  // }
-
-  // calculateScore() {
-  //   let score = 0;
-  //   for (const question in this.correctAnswers) {
-  //     if (this.correctAnswers[question] === this.userAnswers[question]) {
-  //       score++;
-  //     }
-  //   }
-  //   return score;
-  // }
+  constructor() {}
 }
