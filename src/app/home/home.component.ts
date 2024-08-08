@@ -5,11 +5,12 @@ import { ScoreComponent } from '../score/score.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { RadioComponent } from '../radio/radio.component';
 import { CheckboxComponent } from '../checkbox/checkbox.component';
+import { AnswersComponent } from '../answers/answers.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatRadioModule, ScoreComponent, RadioComponent, CheckboxComponent],
+  imports: [MatRadioModule, ScoreComponent, RadioComponent, CheckboxComponent,AnswersComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

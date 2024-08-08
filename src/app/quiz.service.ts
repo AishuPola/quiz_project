@@ -70,107 +70,74 @@ export class QuizService {
       type: 'mcq',
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
     },
-    {
-      id: '11',
-      question: 'Which of the following are prime numbers?',
-      type: 'mca',
-      choices: ['2', '4', '6', '7', '9'],
-    },
-
-    {
-      id: '12',
-      question: 'Which of these countries are located in Europe?',
-      type: 'mca',
-      choices: ['France', 'Brazil', 'Italy', 'Canada', 'Germany'],
-    },
-
-    {
-      id: '13',
-      question: 'Which elements are noble gases?',
-      type: 'mca',
-      choices: ['Helium', 'Oxygen', 'Neon', 'Hydrogen', 'Argon'],
-    },
-
-    {
-      id: '14',
-      question: 'Which of these animals are mammals?',
-      type: 'mca',
-      choices: ['Elephant', 'Shark', 'Crocodile', 'Dolphin', 'Penguin'],
-    },
-
-    {
-      id: '15',
-      question: 'Which of the following are programming languages?',
-      type: 'mca',
-      choices: ['Python', 'Java', 'HTML', 'CSS', 'Ruby'],
-    },
   ];
   answers = [
     {
       id: '1',
-      answer: ['Paris'],
+      answer: [2],
     },
     {
       id: '2',
-      answer: ['Jupiter'],
+      answer: [1],
     },
     {
       id: '3',
-      answer: ['Au'],
+      answer: [0],
     },
     {
       id: '4',
-      answer: ['Harper Lee'],
+      answer: [0],
     },
     {
       id: '5',
-      answer: ['Cell'],
+      answer: [1],
     },
     {
       id: '6',
-      answer: ['Hydrogen'],
+      answer: [0],
     },
     {
       id: '7',
-      answer: ['Diamond'],
+      answer: [2],
     },
     {
       id: '8',
-      answer: ['Avocado'],
+      answer: [1],
     },
     {
       id: '9',
-      answer: ['Leonardo da Vinci'],
+      answer: [1],
     },
     {
       id: '10',
-      answer: ['Nile'],
+      answer: [1],
     },
     {
       id: '11',
-      answer: ['2', '7'],
+      answer: [0, 3],
     },
-
+ 
     {
       id: '12',
-      answer: ['France', 'Italy', 'Germany'],
+      answer: [0, 2, 4],
     },
-
+ 
     {
       id: '13',
-      answer: ['Helium', 'Neon', 'Argon'],
+      answer: [0, 2, 4],
     },
-
+ 
     {
       id: '14',
-      answer: ['Elephant', 'Dolphin'],
+      answer: [0, 3],
     },
-
+ 
     {
       id: '15',
-      answer: ['Python', 'Java', 'Ruby'],
+      answer: [0, 1, 4],
     },
   ];
+
 
   constructor() {}
 }

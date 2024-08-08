@@ -1,4 +1,6 @@
 import { Component,Input } from '@angular/core';
+import { ActivatedRoute, Route, Router } from '@angular/router';
+import { QuizService } from '../quiz.service';
 
 @Component({
   selector: 'app-answers',
@@ -8,5 +10,20 @@ import { Component,Input } from '@angular/core';
   styleUrl: './answers.component.scss'
 })
 export class AnswersComponent {
-  @Input() question: any;
+   question: any;
+   answer: any;
+  
+ 
+  constructor( private quizservice:QuizService ,private route:ActivatedRoute) {
+  //  this.id=this.route.snapshot.paramMap.get('id');
+  //  this.id=+this.id;
+   this.question=this.quizservice.questions;
+   this.answer=this.quizservice.answers;
+  
+  //  console.log(this.quizservice.questions[this.id-1])
+      
+  }
+  
 }
+  
+
