@@ -70,7 +70,43 @@ export class QuizService {
       type: 'mcq',
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
     },
+    {
+      id: '11',
+      question: 'Which of the following are prime numbers?',
+      type: 'mca',
+      choices: ['2', '4', '6', '7', '9'],
+    },
+ 
+    {
+      id: '12',
+      question: 'Which of these countries are located in Europe?',
+      type: 'mca',
+      choices: ['France', 'Brazil', 'Italy', 'Canada', 'Germany'],
+    },
+ 
+    {
+      id: '13',
+      question: 'Which elements are noble gases?',
+      type: 'mca',
+      choices: ['Helium', 'Oxygen', 'Neon', 'Hydrogen', 'Argon'],
+    },
+ 
+    {
+      id: '14',
+      question: 'Which of these animals are mammals?',
+      type: 'mca',
+      choices: ['Elephant', 'Shark', 'Crocodile', 'Dolphin', 'Penguin'],
+    },
+ 
+    {
+      id: '15',
+      question: 'Which of the following are programming languages?',
+      type: 'mca',
+      choices: ['Python', 'Java', 'HTML', 'CSS', 'Ruby'],
+    },
   ];
+
+  
   answers= [
     {
       id: '1',
