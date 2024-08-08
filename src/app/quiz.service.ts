@@ -76,28 +76,28 @@ export class QuizService {
       type: 'mca',
       choices: ['2', '4', '6', '7', '9'],
     },
- 
+
     {
       id: '12',
       question: 'Which of these countries are located in Europe?',
       type: 'mca',
       choices: ['France', 'Brazil', 'Italy', 'Canada', 'Germany'],
     },
- 
+
     {
       id: '13',
       question: 'Which elements are noble gases?',
       type: 'mca',
       choices: ['Helium', 'Oxygen', 'Neon', 'Hydrogen', 'Argon'],
     },
- 
+
     {
       id: '14',
       question: 'Which of these animals are mammals?',
       type: 'mca',
       choices: ['Elephant', 'Shark', 'Crocodile', 'Dolphin', 'Penguin'],
     },
- 
+
     {
       id: '15',
       question: 'Which of the following are programming languages?',
@@ -106,8 +106,7 @@ export class QuizService {
     },
   ];
 
-  
-  answers= [
+  actualanswers = [
     {
       id: '1',
       answer: [2],
@@ -152,28 +151,27 @@ export class QuizService {
       id: '11',
       answer: [0, 3],
     },
- 
+
     {
       id: '12',
       answer: [0, 2, 4],
     },
- 
+
     {
       id: '13',
       answer: [0, 2, 4],
     },
- 
+
     {
       id: '14',
       answer: [0, 3],
     },
- 
+
     {
       id: '15',
       answer: [0, 1, 4],
     },
   ];
-
 
   constructor() {}
 }
