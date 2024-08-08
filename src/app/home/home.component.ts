@@ -10,7 +10,13 @@ import { AnswersComponent } from '../answers/answers.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatRadioModule, ScoreComponent, RadioComponent, CheckboxComponent,AnswersComponent],
+  imports: [
+    MatRadioModule,
+    ScoreComponent,
+    RadioComponent,
+    CheckboxComponent,
+    AnswersComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
