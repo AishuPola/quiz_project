@@ -105,7 +105,7 @@ export class QuizService {
       choices: ['Python', 'Java', 'HTML', 'CSS', 'Ruby'],
     },
   ];
-  answers = [
+  evaluate = [
     {
       id: '1',
       answer: [2],
