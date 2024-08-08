@@ -107,7 +107,7 @@ export class QuizService {
   ];
 
   
-  answers= [
+  actualanswers= [
     {
       id: '1',
       answer: [2],
