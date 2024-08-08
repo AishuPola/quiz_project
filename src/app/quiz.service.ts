@@ -108,67 +108,67 @@ export class QuizService {
   answers = [
     {
       id: '1',
-      answer: ['Paris'],
+      answer: [2],
     },
     {
       id: '2',
-      answer: ['Jupiter'],
+      answer: [1],
     },
     {
       id: '3',
-      answer: ['Au'],
+      answer: [0],
     },
     {
       id: '4',
-      answer: ['Harper Lee'],
+      answer: [0],
     },
     {
       id: '5',
-      answer: ['Cell'],
+      answer: [1],
     },
     {
       id: '6',
-      answer: ['Hydrogen'],
+      answer: [0],
     },
     {
       id: '7',
-      answer: ['Diamond'],
+      answer: [2],
     },
     {
       id: '8',
-      answer: ['Avocado'],
+      answer: [1],
     },
     {
       id: '9',
-      answer: ['Leonardo da Vinci'],
+      answer: [1],
     },
     {
       id: '10',
-      answer: ['Nile'],
+      answer: [1],
     },
     {
       id: '11',
-      answer: ['2', '7'],
+      answer: [0, 3],
     },
 
     {
       id: '12',
-      answer: ['France', 'Italy', 'Germany'],
+      answer: [0, 2, 4],
     },
 
     {
       id: '13',
-      answer: ['Helium', 'Neon', 'Argon'],
+      answer: [0, 2, 4],
     },
 
     {
       id: '14',
-      answer: ['Elephant', 'Dolphin'],
+      answer: [0, 3],
     },
 
     {
       id: '15',
-      answer: ['Python', 'Java', 'Ruby'],
+      answer: [0, 1, 4],
     },
   ];
 
