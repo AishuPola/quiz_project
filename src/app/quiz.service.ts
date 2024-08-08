@@ -172,7 +172,7 @@ export class QuizService {
       answer: [0, 1, 4],
     },
   ];
-  answers: any = [];
+  answers: any = JSON.parse(localStorage.getItem('answers') || '[]');
 
   patchAnswer(answer: any) {
     const ansIdx = this.answers.findIndex((ans: any) => ans.id == answer.id);
@@ -182,6 +182,8 @@ export class QuizService {
     } else {
       this.answers[ansIdx] = answer;
     }
+
+    localStorage.setItem('answers', JSON.stringify(this.answers));
 
     console.log('🚀', this.answers);
   }
