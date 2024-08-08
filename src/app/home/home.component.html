@@ -12,7 +12,12 @@
   @if (question.type=="mca") {
   <app-checkbox [question]="question" [id]="id" />
   } @else {
-  <app-radio [question]="question" [id]="id" />
+  <app-radio
+    [question]="question"
+    [id]="id"
+    (AnsEvent)="patchAnswer($event)"
+    [answer]="answer"
+  />
   }
 
   <div class="button-group">
@@ -23,6 +28,5 @@
     @if (id ==this.quizService.questions.length) {
     <button class="button submit-button" (click)="onSubmit()">SUBMIT</button>
     }
-    
   </div>
 </div>
