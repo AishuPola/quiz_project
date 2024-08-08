@@ -9,6 +9,7 @@ import { Route, Router } from '@angular/router';
   styleUrl: './score.component.scss',
 })
 export class ScoreComponent {
+  score: number = 90;
   constructor(private router: Router) {}
   showanswers() {
     this.router.navigate(['answers']);

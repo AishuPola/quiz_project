@@ -2,7 +2,13 @@
 <div class="container">
   <h2>Your score is:</h2>
 
-  <p>9/10</p>
+  @if(score >70 && score <=90) {
+  <h3>EXcellent!!!!!</h3>
+  } @if(score <=70 && score >=45){
+  <h4>good</h4>
+  } @else {
+  <h3>Need to improve</h3>
+  }
 
   <button (click)="showanswers()">show answers</button>
 </div>

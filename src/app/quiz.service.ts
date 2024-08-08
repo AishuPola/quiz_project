@@ -71,7 +71,7 @@ export class QuizService {
       choices: ['Amazon', 'Nile', 'Yangtze', 'Mississippi'],
     },
   ];
-  answers = [
+  evaluate = [
     {
       id: '1',
       answer: [2],

@@ -7,14 +7,14 @@ import { QuizService } from '../quiz.service';
   standalone: true,
   imports: [],
   templateUrl: './answers.component.html',
-  styleUrl: './answers.component.scss'
+  styleUrl: './answers.component.scss',
 })
 export class AnswersComponent {
    question: any;
    answer: any;
   
  
-  constructor( private quizservice:QuizService ,private route:ActivatedRoute) {
+  constructor( private quizservice:QuizService ) {
   //  this.id=this.route.snapshot.paramMap.get('id');
   //  this.id=+this.id;
    this.question=this.quizservice.questions;
