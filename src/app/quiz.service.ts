@@ -172,6 +172,25 @@ export class QuizService {
       answer: [0, 1, 4],
     },
   ];
+  answers: any = JSON.parse(localStorage.getItem('answers') || '[]');
 
-  constructor() {}
+  patchAnswer(answer: any) {
+    const ansIdx = this.answers.findIndex((ans: any) => ans.id == answer.id);
+
+    if (ansIdx < 0) {
+      this.answers.push(answer);
+    } else {
+      this.answers[ansIdx] = answer;
+    }
+
+    localStorage.setItem('answers', JSON.stringify(this.answers));
+
+    console.log('🚀', this.answers);
+  }
+
+  loadAnswerByQid(question: any) {
+    const answer = this.answers.find((ans: any) => ans.id == question.id);
+    console.log('🚀🚀', answer);
+    return answer;
+  }
 }

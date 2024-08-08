@@ -8,12 +8,21 @@
       <mat-radio-button value="4">{{ question.choices[3] }}</mat-radio-button>
     </mat-radio-group>
   </div> -->
-
-  @if (question.type=="mca") {
-  <app-checkbox [question]="question" [id]="id" />
+  @if(question) { @if (question.type=="mca") {
+  <app-checkbox
+    [question]="question"
+    [id]="id"
+    (AnsEvent)="patchAnswer($event)"
+    [answer]="answer"
+  />
   } @else {
-  <app-radio [question]="question" [id]="id" />
-  }
+  <app-radio
+    [question]="question"
+    [id]="id"
+    (AnsEvent)="patchAnswer($event)"
+    [answer]="answer"
+  />
+  } }
 
   <div class="button-group">
     <button class="button back-button" (click)="prevQuestion()">BACK</button>
@@ -23,6 +32,5 @@
     @if (id ==this.quizService.questions.length) {
     <button class="button submit-button" (click)="onSubmit()">SUBMIT</button>
     }
-    
   </div>
 </div>

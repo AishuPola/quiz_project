@@ -1,23 +1,18 @@
-<form class="question-form">
+<form [formGroup]="testForm" class="question-form">
   <div class="quiz-container">
     <div class="question-section">
       <h3>{{ question.question }}</h3>
     </div>
+
     <div class="options">
- 
-        <mat-checkbox class="example-margin">
-          {{ question.choices[0] }}</mat-checkbox
-        >
-        <mat-checkbox class="example-margin">
-          {{ question.choices[1] }}</mat-checkbox
-        >
-        <mat-checkbox class="example-margin">
-          {{ question.choices[2] }}</mat-checkbox
-        >
-        <mat-checkbox class="example-margin">
-          {{ question.choices[3] }}</mat-checkbox
-        >
-     
+      @if (question.choices.length> 0) { @for (option of question.choices; track
+      $index; let idx = $index) {
+      <div formArrayName="idx">
+        <mat-checkbox [formControlName]="idx" (change)="updatedAnswer()">
+          {{ option }}
+        </mat-checkbox>
+      </div>
+      } }
     </div>
   </div>
 </form>

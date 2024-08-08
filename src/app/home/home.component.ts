@@ -22,6 +22,7 @@ import { AnswersComponent } from '../answers/answers.component';
 })
 export class HomeComponent {
   question: any;
+  answer: any;
   id: any;
   constructor(
     public quizService: QuizService,
@@ -31,6 +32,7 @@ export class HomeComponent {
     this.id = this.route.snapshot.paramMap.get('id'); // From URL
     this.id = +this.id;
     this.question = this.quizService.questions[this.idx];
+    this.answer = this.quizService.loadAnswerByQid(this.question);
 
     console.log(this.question);
   }
@@ -43,7 +45,7 @@ export class HomeComponent {
     if (this.id > 1) {
       this.id--;
       this.question = this.quizService.questions[this.idx];
-
+      this.answer = this.quizService.loadAnswerByQid(this.question);
       this.router.navigate([`question/${this.id}`]);
     }
   }
@@ -51,11 +53,16 @@ export class HomeComponent {
     if (this.id <= this.quizService.questions.length - 1) {
       this.id++;
       this.question = this.quizService.questions[this.idx];
+      this.answer = this.quizService.loadAnswerByQid(this.question);
       console.log(this.id, this.question);
+      //this.saveAnswer(this.id);
       this.router.navigate([`question/${this.id}`]);
     } else {
       this.onSubmit();
     }
+  }
+  saveAnswer(value: string) {
+    // this.quizService.setAnswer(this.id, value);
   }
 
   onSubmit() {
@@ -65,8 +72,14 @@ export class HomeComponent {
     if (this.id <= this.quizService.questions.length - 1) {
       this.id++;
       this.question = this.quizService.questions[this.idx];
+      this.answer = this.quizService.loadAnswerByQid(this.question);
       console.log(this.id, this.question);
       this.router.navigate([`question/${this.id}`]);
     }
+  }
+
+  patchAnswer(answer: any) {
+    console.log('🩷', answer);
+    this.quizService.patchAnswer({ ...answer, id: this.question.id });
   }
 }
