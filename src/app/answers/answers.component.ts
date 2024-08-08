@@ -10,29 +10,8 @@ import { QuizService } from '../quiz.service';
   styleUrl: './answers.component.scss',
 })
 export class AnswersComponent {
-<<<<<<< HEAD
   question: any;
   answer: any;
-=======
-   question: any;
-   answer: any;
-  
-  
- 
-  constructor( private quizservice:QuizService ) {
-  //  this.id=this.route.snapshot.paramMap.get('id');
-  //  this.id=+this.id;
-  
-   this.question=this.quizservice.questions;
-   this.answer=this.quizservice.actualanswers;
-  
-  //  console.log(this.quizservice.questions[this.id-1])
-      
-  }
-  
-}
-  
->>>>>>> f13a0f2b720ba14391eac3acaea4aab25fd78ddc
 
   constructor(private quizservice: QuizService) {
     //  this.id=this.route.snapshot.paramMap.get('id');
