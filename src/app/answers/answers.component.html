@@ -1,26 +1,8 @@
-<<<<<<< HEAD
-@for(ans of question;track $index){
-
+@for(ans of question;track $index) { @if (question[$index].type=="mcq"){
 <h3>{{ ans.question }}</h3>
 <h3>{{ question[$index].choices[answer[$index].answer] }}</h3>
-}
-=======
-@for(ans of question;track $index)
-{
-    @if (question[$index].type=="mcq"){
-    <h3>{{ ans.question }}</h3>
-    <h3>{{ question[$index].choices[answer[$index].answer]}}</h3>  
-}
-    @if(question[$index].type=="mca") {
-           <h3>{{ ans.question }}</h3>
-            @for(p of answer[$index].answer ;track $index ){
-            <h3>{{ans.choices[p]}}</h3>
-            }
-    }
-}
-
-
-       
-
-
->>>>>>> f13a0f2b720ba14391eac3acaea4aab25fd78ddc
+} @if(question[$index].type=="mca") {
+<h3>{{ ans.question }}</h3>
+@for(p of answer[$index].answer ;track $index ){
+<h3>{{ ans.choices[p] }}</h3>
+} } }
